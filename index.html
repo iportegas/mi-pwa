@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo PWA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log("Service Worker registrado"))
+                .catch(err => console.log("Error al registrar SW", err));
+        }
+    </script>
+</head>
+<body>
+    <h1>¡Hola Mundo PWA!</h1>
+    <p>Esta es una PWA básica sin necesidad de ngrok.</p>
+</body>
+</html>
