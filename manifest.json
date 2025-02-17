@@ -1,7 +1,7 @@
 {
     "name": "Hola Mundo PWA",
     "short_name": "Hola PWA",
-    "start_url": "/index.html",
+    "start_url": "/mi-pwa/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
